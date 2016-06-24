@@ -47,7 +47,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -73,7 +77,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Arrays.asList(property, secondProperty));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -99,7 +107,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -128,7 +140,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Arrays.asList(property, secondProperty));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -156,7 +172,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -178,7 +198,11 @@ public class PropertyQueryTest extends PropertyMethod {
         }});
         queryObj.put("exactMatch", true);
 
+<<<<<<< HEAD
         JSONAssert.assertEquals("[]", formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals("[]", formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -200,7 +224,11 @@ public class PropertyQueryTest extends PropertyMethod {
         }});
         queryObj.put("exactMatch", true);
 
+<<<<<<< HEAD
         JSONAssert.assertEquals("[]", formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals("[]", formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -221,7 +249,11 @@ public class PropertyQueryTest extends PropertyMethod {
         }});
         queryObj.put("exactMatch", true);
 
+<<<<<<< HEAD
         JSONAssert.assertEquals("[]", formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals("[]", formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -242,7 +274,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -262,7 +298,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -295,7 +335,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Arrays.asList(property, lastProperty));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -321,7 +365,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Arrays.asList(property, lastProperty));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -348,7 +396,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Arrays.asList(property, lastProperty));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
         logger.debug("expected: {}", expected);
         logger.debug("given: {}", getProperty(queryObj));
     }
@@ -376,7 +428,11 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("last", true);
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(lastProperty));
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -410,7 +466,11 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("last", true);
 
         String expected = jacksonMapper.writeValueAsString(Arrays.asList(lastProperty, lastPropertySecond));
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -433,7 +493,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
         logger.debug("Expected json: {}", expected);
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -453,7 +517,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -474,7 +542,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -494,7 +566,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -514,7 +590,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -537,7 +617,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -549,7 +633,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         Response response = getProperty(request);
         assertEquals(BAD_REQUEST.getStatusCode(), response.getStatus());
+<<<<<<< HEAD
         assertEquals("{\"error\":\"IllegalArgumentException: Missing parameters. One of the following combinations is required: interval, interval + startTime/startDate, interval + endTime/endDate, startTime/startDate + endTime/endDate\"}", formatToJsonString(response));
+=======
+        assertEquals("{\"error\":\"IllegalArgumentException: Missing parameters. One of the following combinations is required: interval, interval + startTime/startDate, interval + endTime/endDate, startTime/startDate + endTime/endDate\"}", formatToJson(response));
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -560,7 +648,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         Response response = getProperty(request);
         assertEquals(BAD_REQUEST.getStatusCode(), response.getStatus());
+<<<<<<< HEAD
         assertEquals("{\"error\":\"IllegalArgumentException: Missing parameters. One of the following combinations is required: interval, interval + startTime/startDate, interval + endTime/endDate, startTime/startDate + endTime/endDate\"}", formatToJsonString(response));
+=======
+        assertEquals("{\"error\":\"IllegalArgumentException: Missing parameters. One of the following combinations is required: interval, interval + startTime/startDate, interval + endTime/endDate, startTime/startDate + endTime/endDate\"}", formatToJson(response));
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -570,7 +662,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         Response response = getProperty(request);
         assertEquals(BAD_REQUEST.getStatusCode(), response.getStatus());
+<<<<<<< HEAD
         assertEquals("{\"error\":\"IllegalArgumentException: Missing parameters. One of the following combinations is required: interval, interval + startTime/startDate, interval + endTime/endDate, startTime/startDate + endTime/endDate\"}", formatToJsonString(response));
+=======
+        assertEquals("{\"error\":\"IllegalArgumentException: Missing parameters. One of the following combinations is required: interval, interval + startTime/startDate, interval + endTime/endDate, startTime/startDate + endTime/endDate\"}", formatToJson(response));
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -583,7 +679,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         Response response = getProperty(request);
         assertEquals(BAD_REQUEST.getStatusCode(), response.getStatus());
+<<<<<<< HEAD
         assertEquals("{\"error\":\"IllegalArgumentException: Missing parameters. One of the following combinations is required: interval, interval + startTime/startDate, interval + endTime/endDate, startTime/startDate + endTime/endDate\"}", formatToJsonString(response));
+=======
+        assertEquals("{\"error\":\"IllegalArgumentException: Missing parameters. One of the following combinations is required: interval, interval + startTime/startDate, interval + endTime/endDate, startTime/startDate + endTime/endDate\"}", formatToJson(response));
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -595,7 +695,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         Response response = getProperty(request);
         assertEquals(BAD_REQUEST.getStatusCode(), response.getStatus());
+<<<<<<< HEAD
         assertEquals("{\"error\":\"IllegalArgumentException: entity or entities or entityGroup or entityExpression must not be empty\"}", formatToJsonString(response));
+=======
+        assertEquals("{\"error\":\"IllegalArgumentException: entity or entities or entityGroup or entityExpression must not be empty\"}", formatToJson(response));
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -642,7 +746,11 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("exactMatch", true);
 
 
+<<<<<<< HEAD
         JSONAssert.assertEquals("[]", formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals("[]", formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -672,7 +780,11 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("exactMatch", false);
 
 
+<<<<<<< HEAD
         JSONAssert.assertEquals("[]", formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals("[]", formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -701,7 +813,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -731,7 +847,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -762,7 +882,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -789,7 +913,11 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("startDate", Util.getMinDate());
         queryObj.put("endDate", Util.getMaxDate());
 
+<<<<<<< HEAD
         JSONAssert.assertEquals("[]", formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals("[]", formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -815,7 +943,11 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("startDate", Util.getMinDate());
         queryObj.put("endDate", Util.getMaxDate());
 
+<<<<<<< HEAD
         JSONAssert.assertEquals("[]", formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals("[]", formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -848,7 +980,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property3));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
 
     }
 
@@ -874,7 +1010,11 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("endDate", Util.getMaxDate());
 
 
+<<<<<<< HEAD
         JSONAssert.assertEquals("[]", formatToJsonString(getProperty(queryObj)),false);
+=======
+        JSONAssert.assertEquals("[]", formatToJson(getProperty(queryObj)),false);
+>>>>>>> 345be1d... done refactor
     }
 
     @Test
@@ -900,7 +1040,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -933,7 +1077,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Arrays.asList(property, property2, property3));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -961,7 +1109,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property2));
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -989,7 +1141,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1017,7 +1173,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1045,7 +1205,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1073,7 +1237,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property2));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1100,7 +1268,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1127,7 +1299,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property2));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1154,7 +1330,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1181,7 +1361,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property2));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1201,7 +1385,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1222,7 +1410,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1242,7 +1434,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
 
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2908
@@ -1262,7 +1458,11 @@ public class PropertyQueryTest extends PropertyMethod {
 
 
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
+<<<<<<< HEAD
         JSONAssert.assertEquals(expected, formatToJsonString(getProperty(queryObj)), false);
+=======
+        JSONAssert.assertEquals(expected, formatToJson(getProperty(queryObj)), false);
+>>>>>>> 345be1d... done refactor
     }
 
     //#2946
@@ -1286,7 +1486,11 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("endDate", Util.getMaxDate());
         queryObj.put("limit", 1);
 
+<<<<<<< HEAD
         assertEquals(1, calculateJsonArraySize(formatToJsonString(getProperty(queryObj))));
+=======
+        assertEquals(1, calculateJsonArraySize(formatToJson(getProperty(queryObj))));
+>>>>>>> 345be1d... done refactor
     }
 
 
@@ -1319,7 +1523,11 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("endDate", Util.getMaxDate());
         queryObj.put("limit", 2);
 
+<<<<<<< HEAD
         assertEquals(2, calculateJsonArraySize(formatToJsonString(getProperty(queryObj))));
+=======
+        assertEquals(2, calculateJsonArraySize(formatToJson(getProperty(queryObj))));
+>>>>>>> 345be1d... done refactor
     }
 
     //#2946
@@ -1351,7 +1559,11 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("endDate", Util.getMaxDate());
         queryObj.put("limit", 0);
 
+<<<<<<< HEAD
         assertEquals(3, calculateJsonArraySize(formatToJsonString(getProperty(queryObj))));
+=======
+        assertEquals(3, calculateJsonArraySize(formatToJson(getProperty(queryObj))));
+>>>>>>> 345be1d... done refactor
     }
 
     //#2946
@@ -1383,10 +1595,17 @@ public class PropertyQueryTest extends PropertyMethod {
         queryObj.put("endDate", Util.getMaxDate());
 
         queryObj.put("limit", -1);
+<<<<<<< HEAD
         assertEquals(3, calculateJsonArraySize(formatToJsonString(getProperty(queryObj))));
 
         queryObj.put("limit", -5);
         assertEquals(3, calculateJsonArraySize(formatToJsonString(getProperty(queryObj))));
+=======
+        assertEquals(3, calculateJsonArraySize(formatToJson(getProperty(queryObj))));
+
+        queryObj.put("limit", -5);
+        assertEquals(3, calculateJsonArraySize(formatToJson(getProperty(queryObj))));
+>>>>>>> 345be1d... done refactor
 
     }
 
