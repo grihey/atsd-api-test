@@ -16,17 +16,9 @@ import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 import java.text.ParseException;
 import java.util.Collections;
-<<<<<<< HEAD
 
 import static javax.ws.rs.core.Response.Status.OK;
 
-=======
->>>>>>> 345be1d... done refactor
-
-import static javax.ws.rs.core.Response.Status.OK;
-
-
-@SuppressWarnings("unchecked")
 public class MessageMethod extends BaseMethod {
     private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
@@ -51,15 +43,7 @@ public class MessageMethod extends BaseMethod {
 
     public static String executeQuery(final MessageQuery messageQuery) throws IOException, ParseException {
         Response response = httpApiResource.path(METHOD_MESSAGE_QUERY).request().post(Entity.entity(Collections.singletonList(messageQuery), MediaType.APPLICATION_JSON_TYPE));
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (OK.getStatusCode() == response.getStatus()) {
-=======
-        if (200 == response.getStatus()) {
->>>>>>> 345be1d... done refactor
-=======
-        if (OK.getStatusCode() == response.getStatus()) {
->>>>>>> b61eae9... fix 200&400
             logger.debug("Query looks succeeded");
         } else {
             logger.error("Failed to execute message query");
