@@ -52,10 +52,14 @@ public class MetricMethod extends BaseMethod {
     public static void deleteMetric(String metricName) throws IOException {
         Response response = httpApiResource.path(METHOD_METRICS).path(metricName).request().delete();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (OK.getStatusCode() == response.getStatus()) {
 =======
         if (200 == response.getStatus()) {
 >>>>>>> 345be1d... done refactor
+=======
+        if (OK.getStatusCode() == response.getStatus()) {
+>>>>>>> b61eae9... fix 200&400
             logger.debug("Metric looks deleted");
         } else {
             throw new IOException("Fail to execute deleteMetric query");

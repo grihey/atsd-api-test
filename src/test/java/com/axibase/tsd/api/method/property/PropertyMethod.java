@@ -88,10 +88,14 @@ class PropertyMethod extends BaseMethod {
     public static boolean propertyExist(final Property property, boolean strict) throws IOException {
         Response response = getProperty(prepareStrictPropertyQuery(property));
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (response.getStatus() != OK.getStatusCode()) {
 =======
         if (response.getStatus() != 200) {
 >>>>>>> 345be1d... done refactor
+=======
+        if (response.getStatus() != OK.getStatusCode()) {
+>>>>>>> b61eae9... fix 200&400
             throw new IOException("Fail to execute getProperty");
         }
         String expected = jacksonMapper.writeValueAsString(Collections.singletonList(property));
