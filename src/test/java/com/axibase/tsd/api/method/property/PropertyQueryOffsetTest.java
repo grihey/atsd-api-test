@@ -20,18 +20,10 @@ import java.util.Map;
 
 public class PropertyQueryOffsetTest extends PropertyMethod {
     private final static String propertyType = "query-offset-type1";
-    private final static Property propertyPast1;
-    private final static Property propertyMiddl;
-    private final static Property propertyLast1;
-    private final static Property propertyLast2;
-
-
-    static {
-        propertyPast1 = buildProperty("query-offset-entity1", "2016-06-29T00:00:00.010Z", "k1", "kv1");
-        propertyMiddl = buildProperty("query-offset-entity1", "2016-06-29T00:00:00.015Z", "k2", "kv2");
-        propertyLast1 = buildProperty("query-offset-entity2", "2016-06-29T00:00:00.020Z", "k3", "kv3");
-        propertyLast2 = buildProperty("query-offset-entity3", "2016-06-29T00:00:00.020Z", "k4", "kv4");
-    }
+    private final static Property propertyPast1 = buildProperty("query-offset-entity1", "2016-06-29T00:00:00.010Z", "k1", "kv1");
+    private final static Property propertyMiddl = buildProperty("query-offset-entity1", "2016-06-29T00:00:00.015Z", "k2", "kv2");
+    private final static Property propertyLast1 = buildProperty("query-offset-entity2", "2016-06-29T00:00:00.020Z", "k3", "kv3");
+    private final static Property propertyLast2 = buildProperty("query-offset-entity3", "2016-06-29T00:00:00.020Z", "k4", "kv4");
 
 
     @BeforeClass
