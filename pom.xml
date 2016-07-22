@@ -149,7 +149,7 @@
                 <configuration>
                     <parallel>classes</parallel>
                     <threadCount>5</threadCount>
-                    <forkMode>never</forkMode>
+                    <!--<forkMode>never</forkMode>-->
                 </configuration>
             </plugin>
         </plugins>
