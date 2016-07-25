@@ -21,11 +21,20 @@ import java.util.Map;
  */
 public class MetricCommandTest extends MetricMethod {
 
+    /*
+     * Global metric name for tests which works with existing metric.
+     */
+
     String existingMetricName = "metric-3088";
 
     /* #3088 */
+
+    /*
+     * Test sets all possible parameters in a command.
+     * Also creates metric which will use like existing in other tests.
+     */
     @Test
-    public void testOverall() throws Exception, IOException, JSONException, InterruptedException, ParseException {
+    public void testOverall() throws Exception {
 
         DataType dataType = DataType.FLOAT;
         Boolean versioned = false;
@@ -73,6 +82,9 @@ public class MetricCommandTest extends MetricMethod {
 
     /* #3088 */
     @Test
+    /*
+     * Existing metric updates own tags by tags with random names.
+     */
     public void testAddingNewTags() throws Exception {
 
         Map<String, String> tags = new HashMap<String, String>();
@@ -114,6 +126,9 @@ public class MetricCommandTest extends MetricMethod {
 
     /* #3088 */
     @Test
+    /*
+     * Datatype of existing methon changes to LONG, versioning is on.
+     */
     public void testChangeDataTypeAndVersioned() throws Exception {
 
         DataType dataType = DataType.LONG;
@@ -145,6 +160,7 @@ public class MetricCommandTest extends MetricMethod {
     }
 
     /* #3088 */
+
     @Test
     public void testCreateNewMetricWithTags() throws Exception {
 
@@ -229,6 +245,10 @@ public class MetricCommandTest extends MetricMethod {
     }
 
     /* #3088 */
+
+    /*
+     * Test checks metric with whitespaced tag creates or not.
+     */
     @Test
     public void testMalformedTag() throws Exception {
         String name = "metric-malformed-1";
