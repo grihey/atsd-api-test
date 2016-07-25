@@ -31,10 +31,10 @@ public class MetricCommandTest extends MetricMethod {
 
     /*
      * Test sets all possible parameters in a command.
-     * Also creates metric which will use like existing in other tests.
+     * Also creates metric which will use like existing in other tests. Its reason why uderscore in method name.
      */
     @Test
-    public void testOverall() throws Exception {
+    public void _testOverall() throws Exception {
 
         DataType dataType = DataType.FLOAT;
         Boolean versioned = false;
